@@ -1,0 +1,266 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: url('pink.jpeg') no-repeat center center/90% 75%;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+    background: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.search-navigation {
+    background-color: whitesmoke;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.search-navigation form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-navigation input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #fff;
+    border-radius: 5px 0 0 5px;
+    background: rgba(255, 255, 255, 0.8); 
+}
+
+.search-navigation button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background: #fff;
+    color: #333;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.destinations {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.destinations h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 30%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+.card::before {
+    content: attr(title);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.services {
+    background: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.services .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.services .service {
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.services .service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.services .service p {
+    font-size: 16px;
+}
+
+.view-more-section {
+    text-align: center;
+    background: #f9f9f9;
+    padding: 20px 0;
+}
+
+.view-more-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.view-more-links a {
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    text-decoration: none;
+}
+
+.view-more-links a:hover {
+    background: #555;
+}
+
+.newsletter {
+    background: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact {
+    background: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 70%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact textarea {
+    height: 100px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
