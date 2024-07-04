@@ -1,0 +1,246 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: black;
+    line-height: 1.6;
+}
+
+header {
+    background: url("Black_Professional.jpeg") no-repeat center center/ cover blur(6px) ;
+    
+    padding: 50px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color:white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+header {
+    padding: 100px 0 50px; 
+    text-align: center;
+}
+
+body {
+    padding-top: 60px; 
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-content {
+    text-align: left;
+    flex: 1;
+    margin-right: 20px;
+}
+
+.header-content h1 {
+    font-size: 3em;
+    margin: 0;
+    color: black;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header-content h1 span {
+    color:rgba(206, 122, 4, 0.721) ;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.header-content button {
+    background-color: rgba(206, 122, 4, 0.721);
+    color:black;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.header-content button:hover {
+    background-color: #a57e5b;
+    transform: translateY(-3px);
+}
+
+.header-content .social-links {
+    margin-top: 20px;
+}
+
+.header-content .social-links a {
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.header-content .social-links a:hover {
+    color: #f39c12;
+}
+
+
+.profile-photo {
+    width:420px;
+    height: 600px;
+    border-radius: 10%;
+    border: 3px solid #f39c12;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    padding: 50px 0;
+}
+
+#about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display:block;
+    margin: 0 auto 10px;
+    align-items: right;
+}
+
+#skills .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    column-rule-color: rgba(206, 122, 4, 0.721) ;
+}
+
+#skills .skill {
+    background-color:white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: grab;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#skills .skill:active {
+    cursor: grabbing;
+}
+
+#skills .skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    color:rgba(206, 122, 4, 0.721)
+}
+
+#projects .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+#projects .project {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    border: 20px;
+    border-color: rgba(206, 122, 4, 0.721);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s, box-shadow 0.3s;
+}
+
+#projects .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+#projects .project img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#experience .experience-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#testimonial .testimonial-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#testimonial .testimonial-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+#contact p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+footer {
+    background-color:rgba(206, 122, 4, 0.721);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
